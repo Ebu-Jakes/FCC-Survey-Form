@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <Header>
+<h1 id="title">Survey for XYZ Group of Companies</h2>
+    <Header>
+    <body>
+<p id="description">This form is a survey for workers at XYZ Company, to evaluate working conditions. All workers are encouraged to fill the form to help the management review/improve the working condition of its workers. Thank you.</p>
+<form id="survey-form">
+  <div class="form-div">
+  <label for="name" id="name-label">Name</name>
+  <input id="name" type="text" name="name" placeholder="First name first" class="input-field" required>
+  <br>
+ <label for="email" id="email-label">Email</name>
+  <input id="email" type="email" name="email" placeholder="example@xyz.com" class="input-field" required >
+  <br>
+  <label for="number" id="number-label">Age</name>
+  <input id="number" type="number" name="number" placeholder="18" min="18" max="100" class="input-field" required >
+  <br>
+  <br>
+  
+  <label for="drop down" id="working-condition">Describe the working condition in XYZ</label>
+  <select id="dropdown" class="input-field">
+    <option value="Condition_fair">Fair working condition</option>
+    <option  value="Condition_good">Good working condition</option>
+    <option  value="Condition_very_good">Very good working condition</option>
+    <option value="Condition_excellent">Excellent working condition</option>
+  </select>
+  
+    <br>
+  <label for="preferred_department" id="preferred_departement"><br>If you are allowed to transfer to a new department which would it be?<br></label>
+  
+  <input id="preferred_department" type="radio" name="department" id="tech_support"  value="tech_support">
+  <label for="preferred-department" id="preferred_department">Tech Support</label>
+  <br>
+   <input id="preferred_department" type="radio" name="department" id="marketing"  value="marketing">
+  <label for="preferred-department"> Marketing</label>
+  <br>
+   <input id="preferred_department" type="radio" name="department" id="supervisory"  value="supervisory">
+  <label for="preferred-department">Supervisory</label>
+  <br>
+   <input id="preferred_department" type="radio" name="department" id="customer"  value="customer">
+  <label for="preferred-department">Customer Service</label>
+  <br>
+  <br>
+  <label for="departement_relevance">Which department do you think is less relevant to XYZ Company?</label><br>
+    <input id="department_relevance" type="checkbox" name="department_relevance" value="Cutomer_care">
+  <label for="department_relevance">Customer Service</label></br>
+
+   <input id="department_relevance" type="checkbox" name="department_relevance" value="T_support">
+  <label for="department_relevance">Tech Support</label><br>
+
+ <input id="department_relevance" type="checkbox" name="department_relevance" value="market">
+  <label for="department_relevance">Marketing</label><br>
+
+ <input id="department_relevance" type="checkbox" name="department_relevance" value="supervision">
+  <label for="department_relevance">Supervisory</label><br>
+
+ <input id="department_relevance" type="checkbox" name="department_relevance" value="none_above">
+  <label for="department_relevance">None of the Above</label><br>
+
+<input id="department_relevance" type="checkbox" name="department_relevance" value="all_above">
+  <label for="department_relevance">All of the Above</label>
+<br>
+  <label="textarea" id="textarea">From the last option selected above, give reason(s) for your choice:</label><br>
+    <textarea name="additional_info" rows="10" cols="55" class="text-area" placeholder="Your text goes here" >
+</textarea>
+<br>
+<input id="T&C" type="checkbox" name="T&C" value="T&C" required>
+<label for="T&C" id="T&C"> I accept to the <a href="">terms and conditions</a> of XYZ company. I am an employee of XYZ Company and the information provided are my sincere opinion about the this XYZ Group of Company.
+  <br>
+  <input type=submit id="submit" name="survey_form" value="Submit" class="submit-button"></input>                                                 </div>                                    
+</form>
+    </body>
+  </html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
